@@ -1,0 +1,15 @@
+.today-forecast {
+  width: 55%;
+  margin: 2px auto;
+  border-radius: 15px;
+}
+.today-forecast .container-table {
+  flex: 95%;
+  max-width: 95%;
+}
+@media screen and (min-width: 692px) {
+  .today-forecast .container-table {
+    flex: 45%;
+    max-width: 45%;
+  }
+}

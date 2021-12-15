@@ -1,0 +1,31 @@
+.daily-forecast {
+  width: 55%;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+.daily-forecast .day-forecast {
+  flex: auto;
+  /* margin-left: 10px; */
+  padding: 0 10px;
+  border-left: 2px solid #000;
+}
+@media screen and (max-width: 600px) {
+  .daily-forecast .day-forecast {
+    flex: 100%;
+    max-width: 100%;
+    border-top: 2px solid black;
+  }
+}
+@media screen and (max-width: 992px) {
+  .daily-forecast .day-forecast {
+    border-left: none;
+  }
+}
+.daily-forecast .day-forecast:first-child {
+  border-left: 0px;
+  border-bottom-left-radius: 10px;
+}
+
+.daily-forecast .day-forecast:last-child {
+  border-bottom-right-radius: 10px;
+}
