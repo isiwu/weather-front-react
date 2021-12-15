@@ -24,6 +24,7 @@ function App() {
     axios.get("/api/location/key", {
       params: { location: data },
       withCredentials: true,
+      baseURL: "https://react-weather-isiwu.herokuapp.com/",
     })
     .then((response) => {
       store.dispatch({

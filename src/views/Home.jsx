@@ -20,6 +20,7 @@ const Home = () => {
       axios.get("/api/location/key", {
         params: { location: input },
         withCredentials: true,
+        baseURL: "https://react-weather-isiwu.herokuapp.com/",
       })
       .then((response) => {
         store.dispatch({
