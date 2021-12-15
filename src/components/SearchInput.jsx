@@ -25,7 +25,7 @@ class SearchInput extends Component {
       <div className={ this.props.container?"container search-input":"search-input"}>
         <input
           type="text"
-          placeholder="search city or location in nigeria"
+          placeholder="search city or location"
           name="search-input"
           className={this.props.cssClass}
           value={this.state.input}
